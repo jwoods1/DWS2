@@ -1,0 +1,101 @@
+body{
+ background:#585555;
+}
+/* Top bar*/
+.header{
+  background-color: #585555;
+  max-width:100%;
+  margin: 0 0 ;
+}
+/* --- Top Bar End -- */
+/* Nav bar */
+.top-bar, .tab-bar{
+  margin-bottom: 1em;
+}
+.left-off-canvas-menu, .right-off-canvas-menu{
+  background-color: #6730d3;
+}
+.off-canvas-list .active {
+  background-color: #7635C9;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background:#6730d3;
+}
+/* Off canvas fix for icon bar width !*/
+.move-right > .inner-wrap {
+  -ms-transform: translate(6.625rem, 0);
+  -webkit-transform: translate3d(6.625rem, 0, 0);
+  -moz-transform: translate3d(6.625rem, 0, 0);
+  -ms-transform: translate3d(6.625rem, 0, 0);
+  -o-transform: translate3d(6.625rem, 0, 0);
+  transform: translate3d(6.625rem, 0, 0);
+}
+.move-left > .inner-wrap {
+  -ms-transform: translate(-6.625rem, 0);
+  -webkit-transform: translate3d(-6.625rem, 0, 0);
+  -moz-transform: translate3d(-6.625rem, 0, 0);
+  -ms-transform: translate3d(-6.625rem, 0, 0);
+  -o-transform: translate3d(-6.625rem, 0, 0);
+  transform: translate3d(-6.625rem, 0, 0);
+}
+.left-off-canvas-menu{
+  width:auto;
+}
+.right-off-canvas-menu{
+  width:auto;
+}
+/* end of nav bar styles*/
+/* Alert bar under nav*/
+.user-bar{
+  width:100%;
+  height: 1.4em;
+  background-color: #6730d3;
+  margin-top:-.8em;
+  margin-bottom: 2em;
+}
+.user-bar h6{
+  margin:auto;
+  margin-right: 1em;
+  color:#fff;
+}
+.news{
+  color:#F04444;
+  font-size: .8em;
+  margin:auto;
+  margin-left:1em;
+}
+/*alert bar end */
+/* image gallery */
+.orbit-container .orbit-slides-container img {
+  border: 6px solid #6730d3;
+  -webkit-border-top-right-radius: 100px;
+  -webkit-border-bottom-left-radius: 100px;
+  -moz-border-radius-topright: 100px;
+  -moz-border-radius-bottomleft: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.orbit-container .orbit-slides-container > * .orbit-caption {
+  width: 65%;
+  margin: 0 6em 1em;
+  background-color:rgba(100, 49, 129, 0.8);
+}
+/* End of gallery */
+/* Buttons */
+button, .button {
+  background-color:#6730d5; 
+}
+button:hover, .button:hover,.button:focus, button:focus{
+  background-color: #9265EB;
+}
+/* Price / sales ad*/
+.pricing-table .title {
+  background-color: #8626C7
+}
+/* Table */
+table tr:nth-of-type(even) {
+  background: rgba(100, 49, 129, 0.8);
+}
+
+

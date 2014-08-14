@@ -3,162 +3,272 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>MotoDynasty</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css">
+    <link rel="stylesheet" href="css/responsive-tables.css">
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-      	<div class="panel">
-	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-	        <p>Once you've exhausted the fun in this document, you should check out:</p>
-	        <div class="row">
-	        	<div class="large-4 medium-4 columns">
-	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-	    	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-	        	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-	        	</div>        
-					</div>
-      	</div>
-      </div>
-    </div>
+<!-- NAV Bars************************************ -->
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <!-- Mobile nav ********************************-->
+        <div class="row header hide-for-small">
+          <header class='medium-5 medium-centered columns'>
+            <img src="img/mxdy-logo.png" alt="MotoDynasty">
+          </header>
+        </div>
+        <nav class="tab-bar hide-for-medium-up">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+          <section class="middle tab-bar-section">
+            <img  class="title" src="img/mxdy-logo.png" alt="MotoDynasty">
+          </section>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>     
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
+        </nav>
 
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        <aside class="left-off-canvas-menu">
+          <!-- <ul class="off-canvas-list">
+            <li><label><img class="title" src="img/mxdy-logo.png" alt="MotoDynasty"></label></li>
+            <li class="active"><a href="#">Main</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">My Results</a></li>
+            <li><a href="#">My Series</a></li>
+          </ul> -->
+          <div class="icon-bar vertical six-up">
+            <a class="item" href='#'>
+              <i class="fi-home"></i>
+              <label>Main</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-play-circle"></i>
+              <label>Play</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-trophy"></i>
+              <label>LeaderBoard</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-results"></i>
+              <label>My Results</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-flag"></i>
+              <label>My Series</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-info"></i>
+              <label>Help</label>
+            </a>
+          </div>
+        </aside>
+
+        <aside class="right-off-canvas-menu">
+          <!-- <ul class="off-canvas-list">
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Messages</a></li>
+            <li ><a href="#">Settings</a></li>
+            <li ><a href="#">Sign out</a></li>
+          </ul> -->
+          <div class="icon-bar vertical five-up">
+            <a class="item" href='#'>
+              <i class="fi-torsos-all"></i>
+              <label>Friends</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-mail"></i>
+              <label>Messages</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-wrench"></i>
+              <label>Settings</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-power"></i>
+              <label>Sign Out</label>
+            </a>
+            <a class="item" href='#'>
+              <i class="fi-social-facebook"></i>
+              <label>Like us!</label>
+            </a>
+          </div>
+        </aside>
+        <!-- End of mobile nav *************************-->
+        <!-- medium to large screen Nav *******************-->
+        <nav class="top-bar show-for-medium-up" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li><a href="#">Friends</a></li>
+              <li><a href="#">Messages</a></li>
+              <li ><a href="#">Settings</a></li>
+              <li ><a href="#">Sign out</a></li>
+
+            </ul>
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li class="active"><a href="#">Main</a></li>
+              <li><a href="#">Play</a></li>
+              <li><a href="#">Leaderboard</a></li>
+              <li><a href="#">My Results</a></li>
+              <li><a href="#">My Series</a></li>
+            </ul>
+          </section>
+        </nav>
+       <!-- END OF NAV *************************************-->
+        <div class="main-section">
+          <!-- content goes here *************** -->
+          <div class="user-bar">
+            <h6 class="right hide-for-small">Jwoods 130430</h6>
+            <p class="news">
+              Alert:James Stewart # 7 will not be racing today.
+            </p>
+          </div>
+           
+          <div class="row">
+             <!-- Signup -->
+            <section class="medium-5 columns">
+              <ul class="pricing-table">
+                <li class="title">Lucas Oil Motocross Series</li>
+                <li class="price">$10.00</li>
+                <li class="description">Play all rounds for your chance to win Vurb Moto Gear.</li>
+                <li class="bullet-item">1st Prize - 250 CR Honda  + Meta</li>
+                <li class="bullet-item">2nd Prize - Bell Helmet with Scott Goggles + Meta </li>
+                <li class="bullet-item">3rd Prize - 2 pair Scott Goggles and Meta</li>
+                <li class="cta-button"><a class="button round" href="#">Play Now</a></li>
+              </ul>
+            </section>
+            <!-- End signup-->
+            <!-- Orbit start*****************************-->
+            <div class="medium-7 columns">
+              <ul class="orbit" data-orbit>
+                <li>
+                  <img src="img/mxdy1.jpg" alt="slide 1" />
+                  <div class="orbit-caption">
+                    This Weeks #1 Player!
+                  </div>
+                </li>
+                <li class="active">
+                  <img src="img/mxdy2.jpg" alt="slide 2" />
+                  <div class="orbit-caption">
+                    Top Rider this Week
+                  </div>
+                </li>
+                <li>
+                  <img src="img/mxdy3.jpg" alt="slide 3" />
+                  <div class="orbit-caption">
+                    Dark Horse who you should pick.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          <!-- Orbit End ********************************-->
+          </div>
+          <aside class="row">
+             <!-- Form start *********************************-->
+            <section class="medium-4 columns">
+             <form class="panel">
+                <fieldset>
+                  <legend>Get The Latest News</legend>
+
+                  <label>Name
+                    <input type="text" placeholder="Name Here ..">
+                  </label>
+                  <label>Email
+                    <input type="email" placeholder="Email Here..">
+                  </label>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Get Promotions</label>
+                    <br>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Accept terms</label>
+                    <button class="small button round">Submit</button>
+                </fieldset>
+              </form>
+            </section>
+           <!-- Form end ************************-->
+            <section class="medium-8 columns">
+              <h4 class='panel'>Last Weeks Winners</h4>
+              <table class="responsive">
+                <thead>
+                  <tr>
+                    <th width="200">Series</th>
+                    <th width="150">450</th>
+                    <th width="150">Points</th>
+                    <th width="150">250</th>
+                    <th width="150">Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lucas Oil Motocross</td>
+                    <td>JimmyFast</td>
+                    <td>430pts</td>
+                    <td>GrantWins</td>
+                    <td>330pts</td>
+                  </tr>
+                  <tr>
+                    <td>FIM World Motocross</td>
+                    <td>WorldClassWinner</td>
+                    <td>520pts</td>
+                    <td>IamgoodAtWinning</td>
+                    <td>420pts</td>
+                  </tr>
+                  <tr>
+                    <td>Amatur Nationals</td>
+                    <td>Hismom</td>
+                    <td>230pts</td>
+                    <td>Ialsoride</td>
+                    <td>400pts</td>
+                  </tr>
+                   <tr>
+                    <td>FIM World Motocross</td>
+                    <td>WorldClassWinner</td>
+                    <td>520pts</td>
+                    <td>IamgoodAtWinning</td>
+                    <td>420pts</td>
+                  </tr>
+                  <tr>
+                    <td>Lucas Oil Motocross</td>
+                    <td>JimmyFast</td>
+                    <td>430pts</td>
+                    <td>GrantWins</td>
+                    <td>330pts</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </aside>
+           
+           
+          <footer class="panel">
+            Images from <a href="vurbmoto.com">Vurbmoto</a> and <a href="motodynasty.com">MotoDynasty.com </a>
+          </footer>
+          
         </div>
+
+      <a class="exit-off-canvas"></a>
+
       </div>
-    </div>
+    </div>    
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/responsive-tables.js"></script>
     <script>
       $(document).foundation();
     </script>
